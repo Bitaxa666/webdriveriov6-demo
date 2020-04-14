@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "ES2017",
+        "module": "commonjs",
+        "allowJs": true,
+        "inlineSourceMap": true,
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "outDir": "./build",
+        "paths": {
+            "*": [ "./*" ],
+            "src/*": ["./src/*"]
+        },
+        "types": ["node", "@wdio/sync", "@wdio/mocha-framework"],
+        "typeRoots": ["./types"]
+    }  
+}

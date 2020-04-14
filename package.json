@@ -1,0 +1,38 @@
+{
+  "name": "ui-test-demo",
+  "version": "1.0.0",
+  "description": "Demo UI-tests for DEMO project",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio ./wdio.conf.js"
+  },
+  "keywords": [
+    "mocha",
+    "uitesting",
+    "webdriverio",
+    "e2e",
+    "test automation"
+  ],
+  "author": "Mihaylyuk Vitalii",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/cli": "^6.0.15",
+    "@wdio/local-runner": "^6.0.15",
+    "@wdio/mocha-framework": "^6.0.15",
+    "@wdio/spec-reporter": "^6.0.14",
+    "@wdio/sync": "^6.0.15",
+    "chromedriver": "^76.0.0",
+    "wdio-chromedriver-service": "^6.0.1",
+    "@types/chai": "^4.2.10",
+    "@types/node": "^13.9.0",
+    "@types/mocha": "^7.0.2",
+    "chai": "^4.2.0",
+    "ts-node": "^8.8.2",
+    "typescript": "^3.8.3",
+    "faker": "^4.1.0",
+    "request-promise-native": "^1.0.8"
+  },
+  "engines": {
+    "node": ">=12.6.1"
+  }
+}
