@@ -6,7 +6,7 @@
   "scripts": {
     "start-server": "(cd ../app/ && npm start)",
     "test": "wdio ./wdio.conf.js",
-    "test:group": "wdio ./wdio.conf.js --suite smoke",
+    "test:group-smoke": "wdio ./wdio.conf.js --suite smoke",
     "test:headles": "wdio ./wdio-headles.conf.js",
     "ci": "start-server-and-test start-server http://localhost:3000 test:group"
   },
