@@ -12,6 +12,6 @@
             "src/*": ["./src/*"]
         },
         "types": ["node", "@wdio/sync", "@wdio/mocha-framework"],
-        "typeRoots": ["./types"]
+        "typeRoots": ["tests/types"]
     }  
 }
