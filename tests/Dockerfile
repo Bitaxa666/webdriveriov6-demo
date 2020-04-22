@@ -12,5 +12,3 @@ ADD ./specs specs
 ADD ./types types
 ADD ./pages pages
 ADD ./models models
-
-CMD [ "mpn run ci"]

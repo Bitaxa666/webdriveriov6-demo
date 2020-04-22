@@ -8,7 +8,7 @@
     "test": "wdio ./wdio.conf.js",
     "test:group-smoke": "wdio ./wdio.conf.js --suite smoke",
     "test:headles": "wdio ./wdio-headles.conf.js",
-    "ci": "start-server-and-test start-server http://localhost:3000 test:group"
+    "ci": "start-server-and-test start-server http://localhost:3000 test:group-smoke"
   },
   "keywords": [
     "mocha",
