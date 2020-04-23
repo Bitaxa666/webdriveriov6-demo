@@ -1,10 +1,13 @@
-FROM node:12.6.1
-LABEL maintainer="webdriverIov6"
+FROM node:12
+LABEL maintainer="serverv6"
 
-ADD ./package.json package.json
-ADD ./package-lock.json package-lock.json
+WORKDIR /usr/src/app
 
-ADD ./public public
-ADD ./src src
+COPY package*.json ./
+#Copy App files
+COPY ./public public
+COPY ./src src
 
 RUN npm install
+
+EXPOSE 3000

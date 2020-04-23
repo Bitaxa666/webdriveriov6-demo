@@ -14,8 +14,17 @@ exports.config = {
     // Specify Test Files
     // ==================
     specs: [
-        './test/specs/**/*.ts'
+        './specs/smoke-tests/**/*.spec.ts'
     ],
+
+    // suites: {
+    //     smoke: [
+    //         './specs/smoke-tests/**/*.spec.ts'            
+    //     ],
+    //     low_Level: [
+    //         './specs/low_level_tests/**/*.spec.ts'
+    //     ]
+    // },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'

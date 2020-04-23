@@ -8,13 +8,12 @@ services:
     command: npm start
     ports:
       - 3000:3000
-    logging:
-        driver: none
 
   tests:
     image: app_testing
     build: tests/ 
-    command: npm run ci
+    command: >
+        sh -c "ls && npm run test:headles"
     network_mode: host 
     depends_on:
       - server

@@ -1,14 +1,16 @@
-FROM node:12.6.1
+FROM node:12
 LABEL maintainer="webdriverIov6"
 
-ADD ./package.json package.json
-ADD ./package-lock.json package-lock.json
-ADD ./tsconfig.json ./
-ADD ./wdio.conf.js ./
-ADD ./wdio-headles.conf.js ./
-ADD ./specs specs
-ADD ./types types
-ADD ./pages pages
-ADD ./models models
+WORKDIR /usr/src/tests
+
+COPY package*.json ./
+#Copy tests files
+COPY ./tsconfig.json ./
+COPY ./wdio.conf.js ./
+COPY ./wdio-headles.conf.js ./
+COPY ./specs specs
+COPY ./types types
+COPY ./pages pages
+COPY ./models models
 
 RUN npm install
